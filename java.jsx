@@ -40,7 +40,7 @@ const propiedadesIniciales = [
         titulo: "Edificio con seguridad 24/7",
         ubicacion: "Lince, Lima",
         precio: "US$ 400,000",
-        imagen: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
         detalles: "Edificio moderno con vigilancia y áreas comunes.",
       },
       {
