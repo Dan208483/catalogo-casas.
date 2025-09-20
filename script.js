@@ -2,60 +2,60 @@ const { useState } = React;
 
 const propiedadesIniciales = [
   {
-    titulo: "Terreno en Aucallama, Huaral",
-    ubicacion: "Huaral, Lima - Perú",
-    precio: "US$ 20,000",
-    imagen: "https://via.placeholder.com/300?text=Aucallama",
-    detalles: "Lote campestre de 200 m² con áreas comunes y seguridad.",
+    titulo: "Terreno Aucallama",
+    ubicacion: "Huaral",
+    precio: "US$20,000",
+    imagen: "https://via.placeholder.com/300x180?text=Aucallama",
+    detalles: "Lote de 200m²."
   },
   {
-    titulo: "Terreno grande en Lurín",
-    ubicacion: "Lurín - Lima",
-    precio: "US$ 1,130,000",
-    imagen: "https://via.placeholder.com/300?text=Lurin",
-    detalles: "8,522 m² con subdivisión, buena ubicación y proyección urbana.",
+    titulo: "Terreno Lurín",
+    ubicacion: "Lurín",
+    precio: "US$1,130,000",
+    imagen: "https://via.placeholder.com/300x180?text=Lurin",
+    detalles: "Terreno grande."
   },
   {
-    titulo: "Casa en Miraflores",
-    ubicacion: "Miraflores, Lima - Perú",
-    precio: "US$ 250,000",
-    imagen: "https://via.placeholder.com/300?text=Miraflores",
-    detalles: "Casa de 120 m² con 3 habitaciones, 2 baños y jardín.",
+    titulo: "Casa Miraflores",
+    ubicacion: "Miraflores",
+    precio: "US$250,000",
+    imagen: "https://via.placeholder.com/300x180?text=Miraflores",
+    detalles: "Casa con jardín."
   },
   {
-    titulo: "Departamento en San Isidro",
-    ubicacion: "San Isidro, Lima - Perú",
-    precio: "US$ 300,000",
-    imagen: "https://via.placeholder.com/300?text=San+Isidro",
-    detalles: "Moderno departamento de 90 m² con 2 habitaciones.",
+    titulo: "Depto San Isidro",
+    ubicacion: "San Isidro",
+    precio: "US$300,000",
+    imagen: "https://via.placeholder.com/300x180?text=San+Isidro",
+    detalles: "Moderno departamento."
   },
   {
-    titulo: "Casa en Cusco colonial",
-    ubicacion: "Centro histórico, Cusco",
-    precio: "US$ 150,000",
-    imagen: "https://via.placeholder.com/300?text=Cusco",
-    detalles: "Casa restaurada, paredes de piedra, arquitectura andina.",
+    titulo: "Casa Barranco",
+    ubicacion: "Barranco",
+    precio: "US$180,000",
+    imagen: "https://via.placeholder.com/300x180?text=Barranco",
+    detalles: "Casa acogedora."
   },
   {
-    titulo: "Departamento en Arequipa",
-    ubicacion: "Yanahuara, Arequipa",
-    precio: "US$ 180,000",
-    imagen: "https://via.placeholder.com/300?text=Arequipa",
-    detalles: "Departamento con vista al Misti, 3 habitaciones.",
+    titulo: "Casa Surco",
+    ubicacion: "Surco",
+    precio: "US$420,000",
+    imagen: "https://via.placeholder.com/300x180?text=Surco",
+    detalles: "Casa amplia."
   },
   {
-    titulo: "Lote en playa Zorritos",
-    ubicacion: "Zorritos, Tumbes",
-    precio: "US$ 75,000",
-    imagen: "https://via.placeholder.com/300?text=Zorritos",
-    detalles: "Terreno frente al mar, ideal para construir bungalow.",
+    titulo: "Terreno Pachacámac",
+    ubicacion: "Pachacámac",
+    precio: "US$60,000",
+    imagen: "https://via.placeholder.com/300x180?text=Pachacamac",
+    detalles: "Terreno residencial."
   },
   {
-    titulo: "Casa campestre en Cajamarca",
-    ubicacion: "Cajamarca rural",
-    precio: "US$ 90,000",
-    imagen: "https://via.placeholder.com/300?text=Cajamarca",
-    detalles: "Casa de campo con vista a las montañas, 1,000 m².",
+    titulo: "Depto Magdalena",
+    ubicacion: "Magdalena",
+    precio: "US$220,000",
+    imagen: "https://via.placeholder.com/300x180?text=Magdalena",
+    detalles: "Vista panorámica."
   }
 ];
 
@@ -78,11 +78,11 @@ function App() {
 
   return (
     <div className="container">
-      {propiedades.map((prop, index) => (
-        <PropiedadCard key={index} propiedad={prop} />
+      {propiedades.map((prop, i) => (
+        <PropiedadCard key={i} propiedad={prop} />
       ))}
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
