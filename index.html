@@ -2,45 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Propiedades en Venta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Propiedades</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- React y Babel -->
   <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-      <h1>DEPA 🏠</h1>
-    </div>
-  </header>
 
-  <nav id="menu" class="hidden-menu">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Propiedades</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>DEPA 🏠</h1>
+  </header>
 
   <div id="root"></div>
 
+  <!-- Tu JS con React + Babel -->
   <script type="text/babel" src="java.js"></script>
-  <script>
-    const menuIcon = document.querySelector('.menu-icon');
-    const navMenu = document.getElementById('menu');
 
-    menuIcon.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-  </script>
 </body>
 </html>
