@@ -54,10 +54,8 @@ const propiedadesIniciales = [
     titulo: "Departamento con piscina",
     ubicacion: "Jesús María, Lima",
     precio: "US$ 600,000",
-    imagen: "https://images.unsplash.com/photo-1505692952047-35e74fcb27ef?auto=format&fit=crop&w=800&q=80",
-    detalles: "Departamento con piscina y gimnasio incluidos.",
-  },
-];
+    imagen: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+    detalles: "Departamento con piscina y gimnasio incluidos."
 
 function PropiedadCard({ propiedad }) {
   return (
@@ -73,106 +71,15 @@ function PropiedadCard({ propiedad }) {
   );
 }
 
-function FormAgregarPropiedad({ onAgregar }) {
-  const [titulo, setTitulo] = useState("");
-  const [ubicacion, setUbicacion] = useState("");
-  const [precio, setPrecio] = useState("");
-  const [imagen, setImagen] = useState("");
-  const [detalles, setDetalles] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!titulo || !ubicacion || !precio || !imagen || !detalles) {
-      alert("Por favor completa todos los campos.");
-      return;
-    }
-
-    const nuevaPropiedad = { titulo, ubicacion, precio, imagen, detalles };
-    onAgregar(nuevaPropiedad);
-
-    setTitulo("");
-    setUbicacion("");
-    setPrecio("");
-    setImagen("");
-    setDetalles("");
-  };
-
-  return (
-    <div className="form-container">
-      <h2>Agregar Nueva Propiedad</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="titulo">Título</label>
-          <input
-            type="text"
-            id="titulo"
-            value={titulo}
-            onChange={(e) => setTitulo(e.target.value)}
-            placeholder="Ej: Casa en Miraflores"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="ubicacion">Ubicación</label>
-          <input
-            type="text"
-            id="ubicacion"
-            value={ubicacion}
-            onChange={(e) => setUbicacion(e.target.value)}
-            placeholder="Ej: Miraflores, Lima - Perú"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="precio">Precio</label>
-          <input
-            type="text"
-            id="precio"
-            value={precio}
-            onChange={(e) => setPrecio(e.target.value)}
-            placeholder="Ej: US$ 250,000"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="imagen">URL de Imagen</label>
-          <input
-            type="url"
-            id="imagen"
-            value={imagen}
-            onChange={(e) => setImagen(e.target.value)}
-            placeholder="https://..."
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="detalles">Detalles</label>
-          <textarea
-            id="detalles"
-            value={detalles}
-            onChange={(e) => setDetalles(e.target.value)}
-            placeholder="Descripción breve de la propiedad"
-          />
-        </div>
-        <button type="submit" className="submit-btn">Agregar Propiedad</button>
-      </form>
-    </div>
-  );
-}
-
 function App() {
-  const [propiedades, setPropiedades] = useState(propiedadesIniciales);
-
-  const agregarPropiedad = (nueva) => {
-    setPropiedades([nueva, ...propiedades]);
-  };
+  const [propiedades] = useState(propiedadesIniciales);
 
   return (
-    <>
-      <FormAgregarPropiedad onAgregar={agregarPropiedad} />
       <div className="container">
         {propiedades.map((prop, index) => (
           <PropiedadCard key={index} propiedad={prop} />
         ))}
       </div>
-    </>
   );
 }
 
