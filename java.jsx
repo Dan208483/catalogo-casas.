@@ -33,14 +33,14 @@ const propiedadesIniciales = [
         titulo: "Casa de campo acogedora",
         ubicacion: "Aucallama, Huaral",
         precio: "US$ 180,000",
-        imagen: "https://images.unsplash.com/photo-1501183638714-1f0f35a34b55?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
         detalles: "Casa campestre ideal para desconectar de la ciudad.",
       },
       {
         titulo: "Edificio con seguridad 24/7",
         ubicacion: "Lince, Lima",
         precio: "US$ 400,000",
-        imagen: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80",
         detalles: "Edificio moderno con vigilancia y áreas comunes.",
       },
       {
