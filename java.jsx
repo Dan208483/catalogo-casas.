@@ -5,7 +5,7 @@ const propiedadesIniciales = [
         titulo: "Casa moderna en la ciudad",
         ubicacion: "Lima, Perú",
         precio: "US$ 350,000",
-        imagen: "imagen: "https://i.postimg.cc/tu-imagen-ap1.jpg",
+        imagen: "https://via.placeholder.com/300x180?text=Casa+Jardin",
         detalles: "Casa moderna con diseño minimalista y espacios abiertos.",
       },
       {
