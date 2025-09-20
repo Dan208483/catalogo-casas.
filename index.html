@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <title>Te ayudamos a encontrar lugares</title>
 
-  <!-- React & Babel -->
   <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,7 +21,6 @@
   </div>
 </header>
 
-<!-- Menú desplegable oculto -->
 <nav id="menu" class="hidden-menu">
   <ul>
     <li><a href="#">Inicio</a></li>
@@ -32,7 +29,6 @@
   </ul>
 </nav>
 
-<!-- Galería -->
 <section class="movie-grid">
   <div class="movie-item"><img src="img/ap1.jpg" alt=""></div>
   <div class="movie-item"><img src="img/ap2.jpg" alt=""></div>
@@ -40,11 +36,9 @@
   <div class="movie-item"><img src="img/ap4.jpg" alt=""></div>
 </section>
 
-<!-- React aquí -->
 <div id="root"></div>
-<script type="text/babel" src="java.js"></script>
+<script type="text/babel" src="java.jsx"></script>
 
-<!-- JS de menú -->
 <script>
   const menuIcon = document.querySelector('.menu-icon');
   const navMenu  = document.getElementById('menu');
