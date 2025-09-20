@@ -5,7 +5,7 @@ const propiedadesIniciales = [
     titulo: "Casa moderna en la ciudad",
     ubicacion: "Lima, Perú",
     precio: "US$ 350,000",
-    imagen: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+    imagen: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
     detalles: "Casa moderna con diseño minimalista y espacios abiertos.",
   },
   {
@@ -26,28 +26,28 @@ const propiedadesIniciales = [
     titulo: "Interior moderno y elegante",
     ubicacion: "Barranco, Lima",
     precio: "US$ 320,000",
-    imagen: "https://images.unsplash.com/photo-1597092276647-7ca6b7b1297b?auto=format&fit=crop&w=800&q=80",
+    imagen: "https://images.unsplash.com/photo-1599420186946-7b5ddf2527b2?auto=format&fit=crop&w=800&q=80",
     detalles: "Departamento con diseño interior moderno y elegante.",
   },
   {
     titulo: "Casa de campo acogedora",
     ubicacion: "Aucallama, Huaral",
     precio: "US$ 180,000",
-    imagen: "https://images.unsplash.com/photo-1501183638714-1f0f35a34b55?auto=format&fit=crop&w=800&q=80",
+    imagen: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
     detalles: "Casa campestre ideal para desconectar de la ciudad.",
   },
   {
     titulo: "Edificio con seguridad 24/7",
     ubicacion: "Lince, Lima",
     precio: "US$ 400,000",
-    imagen: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+    imagen: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
     detalles: "Edificio moderno con vigilancia y áreas comunes.",
   },
   {
     titulo: "Apartamento luminoso y ventilado",
     ubicacion: "San Borja, Lima",
     precio: "US$ 380,000",
-    imagen: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80",
+    imagen: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     detalles: "Apartamento con grandes ventanas y mucha luz natural.",
   },
   {
@@ -55,7 +55,9 @@ const propiedadesIniciales = [
     ubicacion: "Jesús María, Lima",
     precio: "US$ 600,000",
     imagen: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
-    detalles: "Departamento con piscina y gimnasio incluidos."
+    detalles: "Departamento con piscina y gimnasio incluidos.",
+  },
+];
 
 function PropiedadCard({ propiedad }) {
   return (
@@ -75,11 +77,11 @@ function App() {
   const [propiedades] = useState(propiedadesIniciales);
 
   return (
-      <div className="container">
-        {propiedades.map((prop, index) => (
-          <PropiedadCard key={index} propiedad={prop} />
-        ))}
-      </div>
+    <div className="container">
+      {propiedades.map((prop, index) => (
+        <PropiedadCard key={index} propiedad={prop} />
+      ))}
+    </div>
   );
 }
 
