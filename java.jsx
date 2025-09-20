@@ -5,7 +5,7 @@ const propiedadesIniciales = [
         titulo: "Casa moderna en la ciudad",
         ubicacion: "Lima, Perú",
         precio: "US$ 350,000",
-        imagen: "https://via.placeholder.com/300x180?text=Casa+Jardin",
+        imagen: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
         detalles: "Casa moderna con diseño minimalista y espacios abiertos.",
       },
       {
@@ -19,7 +19,7 @@ const propiedadesIniciales = [
         titulo: "Casa con jardín amplio",
         ubicacion: "San Isidro, Lima",
         precio: "US$ 500,000",
-        imagen: "https://via.placeholder.com/300x180?text=Casa+Jardin",
+        imagen: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
         detalles: "Casa familiar con jardín para niños y mascotas.",
       },
       {
