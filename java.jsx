@@ -19,7 +19,7 @@ const propiedadesIniciales = [
         titulo: "Casa con jardín amplio",
         ubicacion: "San Isidro, Lima",
         precio: "US$ 500,000",
-        imagen: "https://images.unsplash.com/photo-1572120360610-d971b9b33a30?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://via.placeholder.com/300x180?text=Casa+Jardin",
         detalles: "Casa familiar con jardín para niños y mascotas.",
       },
       {
