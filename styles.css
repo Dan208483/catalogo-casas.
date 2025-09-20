@@ -30,8 +30,8 @@ header {
 
 .card img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card-body {
