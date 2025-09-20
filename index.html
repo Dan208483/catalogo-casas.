@@ -2,24 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Propiedades</title>
+  <title>Te ayudamos a encontrar lugares</title>
 
-  <link rel="stylesheet" href="styles.css" />
-
+  <!-- React & Babel -->
   <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
+<header>
+  <div class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
     <h1>DEPA 🏠</h1>
-  </header>
-  
-  <div id="root"></div>
+  </div>
+</header>
 
-  <script type="text/babel" src="java.jsx"></script>
+<!-- Menú desplegable oculto -->
+<nav id="menu" class="hidden-menu">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Departamentos</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- Galería -->
+<section class="movie-grid">
+  <div class="movie-item"><img src="img/ap1.jpg" alt=""></div>
+  <div class="movie-item"><img src="img/ap2.jpg" alt=""></div>
+  <div class="movie-item"><img src="img/ap3.jpg" alt=""></div>
+  <div class="movie-item"><img src="img/ap4.jpg" alt=""></div>
+</section>
+
+<!-- React aquí -->
+<div id="root"></div>
+<script type="text/babel" src="java.js"></script>
+
+<!-- JS de menú -->
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navMenu  = document.getElementById('menu');
+
+  if (menuIcon && navMenu) {
+    menuIcon.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  }
+</script>
 
 </body>
 </html>
